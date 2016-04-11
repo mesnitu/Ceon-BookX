@@ -426,7 +426,14 @@
         zen_db_perform(TABLE_META_TAGS_PRODUCTS_DESCRIPTION, $sql_data_array, 'update', "products_id = '" . (int)$products_id . "' and language_id = '" . (int)$language_id . "'");
       }
     }
+// BEGIN CEON URI MAPPING 1 of 1
+ //   require_once(DIR_WS_CLASSES . 'class.CeonURIMappingAdminProductPages.php');
 
+ //   $ceon_uri_mapping_admin = new CeonURIMappingAdminProductPages();
+
+ //   $ceon_uri_mapping_admin->updateProductHandler($products_id, $zc_products->get_handler($product_type));
+    
+    // END CEON URI MAPPING 1 of 1
 
     // future image handler code
     define('IMAGE_MANAGER_HANDLER', 0);
